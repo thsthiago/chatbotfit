@@ -1,5 +1,5 @@
 const Youtube = require('youtube-node')
-const ytConfig = require('./yt-config.json')
+const ytConfig = require('../yt-config.json')
 
 const youtube = new Youtube()
 

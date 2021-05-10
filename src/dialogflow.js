@@ -1,5 +1,5 @@
 const dialogflow = require('dialogflow')
-const configs = require('./dio-bot-deqv-68fd15c110f8.json')
+const configs = require('../dio-bot-deqv-68fd15c110f8.json')
 
 const sessionClient = new dialogflow.SessionsClient({
   projectId: configs.project_id,

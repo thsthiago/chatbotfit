@@ -1,10 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api')
 const { sendMessage } = require('./dialogflow')
 const { searchVideo } = require('./youtube')
+const telegram = require('../telegram.json')
 
-const token = "1610681198:AAFAGu8M9K4qgyZDDTps05NV5lw56xDDGUo"
-
-const bot = new TelegramBot(token, { polling: true })
+const bot = new TelegramBot(telegram.token, { polling: true })
 
 bot.on('message',async (msg) => {
   const chatId = msg.chat.id
